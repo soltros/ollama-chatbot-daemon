@@ -9,15 +9,16 @@ import signal
 
 import os
 
-def run_command():
-    # Change the directory to the ollama-chatbot in the user's home directory
-    home_directory = os.path.expanduser('~')
-    project_directory = os.path.join(home_directory, 'ollama-chatbot')
-    os.chdir(project_directory)
+import os
 
-    # Run the npm command
+def run_command():
+    # Change the directory to the desired path
+    os.chdir('/home/derrik/chatbot-ollama/')
+
+    # Then run the command
     process = subprocess.Popen(["npm", "run", "dev"])
     return process
+
 
 
 def handle_client(client_socket, command_process):
