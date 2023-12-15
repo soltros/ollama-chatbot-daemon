@@ -1,6 +1,5 @@
 # ollama-chatbot-daemon
-A simple Ollama Chatbot Python-based daemon. Is capable of running the Chatbot Ollama program without the need to keep a terminal open. 
-
+A simple Ollama Chatbot Python-based daemon.
 To run, ensure you have:
 - Ollama set up on your Linux system.
 - Cloned [chatbot-ollama](https://github.com/ivanfioravanti/chatbot-ollama) to your system, and used ``npm ci`` to install the required dependencies.
