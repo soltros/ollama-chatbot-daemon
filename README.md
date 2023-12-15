@@ -7,12 +7,23 @@ To run, ensure you have:
 - Cloned the [Ollama-Mini-Daemon](https://github.com/soltros/ollama-mini-daemon) tool to make running ``ollama serve`` in the background much easier.
 - Python installed.
 
+
+
   ```
   git clone https://github.com/soltros/ollama-chatbot-daemon.git
   cd ollama-chatbot-daemon/
   chmod +x *.py
-  ./daemon.py
    ```
+Edit ``daemon.py``, and change the username from my username to yours.
+```
+def run_command():
+    # Change the directory to the desired path
+    os.chdir('/home/derrik/chatbot-ollama/')
+```
+Finally, run with:
+```
+./daemon.py
+```
   
   To shut down the daemon, simply invoke:
    ```
