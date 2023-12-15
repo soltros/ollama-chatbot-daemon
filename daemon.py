@@ -2,15 +2,13 @@
 
 import subprocess
 import threading
-import sys
 
 def read_output(process):
     while True:
         output = process.stdout.readline()
-        if process.poll() is not None and output == '':
+        if output == '':
             break
-        if output:
-            print(output.strip().decode())
+        print(output.strip())
 
 def run_npm():
     process = subprocess.Popen(['npm', 'run', 'dev'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
