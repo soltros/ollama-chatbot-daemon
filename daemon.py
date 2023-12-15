@@ -18,7 +18,7 @@ def run_npm():
     output_thread.start()
 
     # Wait for a key press to terminate the program
-    input("Press enter to stop the program: ")
+    input("Press Ctrl + C to quit. ")
 
     # Terminate the npm process
     process.kill()
